@@ -355,9 +355,9 @@ impl RangeProof {
 
         // First, replay the "interactive" protocol using the proof
         // data to recompute all challenges.
-        if !(n == 8 || n == 16 || n == 32 || n == 64) {
-            return Err(ProofError::InvalidBitsize);
-        }
+        // if !(n == 8 || n == 16 || n == 32 || n == 64) {
+        //    return Err(ProofError::InvalidBitsize);
+        // }
         if bp_gens.gens_capacity < n {
             return Err(ProofError::InvalidGeneratorsLength);
         }
